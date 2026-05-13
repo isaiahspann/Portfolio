@@ -89,12 +89,7 @@ const ImageCard = ({ id, src, alt, title, icon: Icon, className = "shadow-sm bor
         }}
       />
 
-      {/* Tap Indicator */}
-      <div className={`absolute bottom-3 right-3 z-30 transition-transform duration-500 ${isActive ? 'scale-100 opacity-100' : 'scale-75 opacity-0 group-hover:opacity-100 group-hover:scale-100'}`}>
-        <div className="bg-white/90 backdrop-blur shadow-md rounded-full p-1.5 border border-gray-100">
-          <Info size={14} className={isActive ? 'text-gray-700' : 'text-gray-400'} />
-        </div>
-      </div>
+      
     </div>
   );
 };
