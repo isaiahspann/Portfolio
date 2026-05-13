@@ -206,7 +206,7 @@ const SeparatedDashboard = ({
       >
         <ImageCard
           id={`${id}-sidebar`}
-          src="/Images/Sidebar a.png"
+          src={`${import.meta.env.BASE_URL}Images/Sidebar a.png`}
           alt="Sidebar Navigation"
           title="Sidebar"
           icon={Navigation}
@@ -390,7 +390,7 @@ export default function App() {
             <div className="col-span-12 md:col-span-4 bg-white shadow-2xl border border-gray-100 rounded-sm p-2 md:p-3 relative group h-fit">
               <div className="overflow-hidden">
                 <img 
-                  src="/Images/Profile a.jpg" 
+                  src={`${import.meta.env.BASE_URL}Images/Profile a.jpg`}
                   alt="Isaiah Spann" 
                   className="w-full h-auto block transition-transform duration-500 group-hover:scale-105" 
                   referrerPolicy="no-referrer" 
@@ -467,7 +467,7 @@ export default function App() {
               >
                 <SeparatedDashboard 
                   id="operations"
-                  chartSrc="/Images/Operations b.png" 
+                  chartSrc={`${import.meta.env.BASE_URL}Images/Operations b.png`}
                   chartAlt="Operational ROI Analytics" 
                   chartTitle="Financial Operations" 
                   chartIcon={PieChart}
@@ -492,7 +492,7 @@ export default function App() {
               >
                 <SeparatedDashboard 
                   id="demographics"
-                  chartSrc="/Images/Demographics b.png" 
+                  chartSrc={`${import.meta.env.BASE_URL}Images/Demographics b.png`}
                   chartAlt="Workforce Attrition Metrics" 
                   chartTitle="Labor Analytics" 
                   chartIcon={Users}
@@ -517,7 +517,7 @@ export default function App() {
               >
                 <SeparatedDashboard 
                   id="geographic"
-                  chartSrc="/Images/Geographic b.png" 
+                  chartSrc={`${import.meta.env.BASE_URL}Images/Geographic b.png`}
                   chartAlt="Regional Penetration Analysis" 
                   chartTitle="Market GIS" 
                   chartIcon={Globe}
@@ -542,7 +542,7 @@ export default function App() {
               >
                 <SeparatedDashboard 
                   id="overview"
-                  chartSrc="/Images/Overview b.png" 
+                  chartSrc={`${import.meta.env.BASE_URL}Images/Overview b.png`}
                   chartAlt="Travel Agency Ecosystem" 
                   chartTitle="Travel Agency Dashboard" 
                   chartIcon={BarChart3}
